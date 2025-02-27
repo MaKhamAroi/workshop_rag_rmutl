@@ -69,7 +69,7 @@ def generate_answer(query):
     # เรียก Groq API
     groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="mixtral-8x7b-32768",
         messages=prompt
     )
 
@@ -77,7 +77,7 @@ def generate_answer(query):
 
 # 8. สร้างอินเทอร์เฟซด้วย Streamlit
 def main():
-    st.title("RAG Chatbot เกี่ยวกับนครน่านเมืองเก่าที่มีชีวิต")
+    st.title("RAG Chatbot เกี่ยวกับอัตลักษณ์ทางประวัติศาสตร์ของจังหวัดน่าน")
     st.write("สวัสดี Chatbot ที่ช่วยตอบคำถามจากเอกสารที่มีอยู่")
 
     # กำหนด path ของไฟล์ PDF
