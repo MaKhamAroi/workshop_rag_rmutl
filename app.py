@@ -78,7 +78,7 @@ def generate_answer(query):
 # 8. สร้างอินเทอร์เฟซด้วย Streamlit
 def main():
     st.title("RAG Chatbot เกี่ยวกับอัตลักษณ์ทางประวัติศาสตร์ของจังหวัดน่าน")
-    st.write("สวัสดี Chatbot ที่ช่วยตอบคำถามจากเอกสารที่มีอยู่")
+    st.write("สวัสดี Chatbot จะคอยช่วยตอบคำถามจากเอกสารที่มีอยู่")
 
     # กำหนด path ของไฟล์ PDF
     pdf_path = "pdf/นครน่านเมืองเก่าที่มีชีวิต.pdf"
