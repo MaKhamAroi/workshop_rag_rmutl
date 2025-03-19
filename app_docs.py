@@ -134,7 +134,7 @@ def generate_answer(query):
 # 7. สร้างอินเทอร์เฟซด้วย Streamlit
 def main():
     st.title("RAG Chatbot เกี่ยวกับอัตลักษณ์ทางประวัติศาสตร์ของจังหวัดน่าน")
-    st.write("สวัสดี! ฉันคือ Chatbot ที่ช่วยตอบคำถามเกี่ยวกับจังหวัดน่าน")
+    st.write("สวัสดี! ฉันคือ Chatbot ที่ช่วยตอบคำถามเกี่ยวกับอัตลักษณ์ของจังหวัดน่าน")
 
     # เพิ่มข้อมูลเอกสารลงใน Qdrant
     add_documents_to_qdrant(documents)
